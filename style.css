@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/bg.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+h1,h2 {
+    color: #fff;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+h1::before {
+    font-size: 48px;
+    content: "📨";
+    display: block;
+}
+
+h2::before {
+    display: block;
+    font-size: 32px;
+}
+
+.form-contact {
+    width: 100%;
+    max-width: 512px;
+    font-size: larger;
+}
+
+.form-contact label,
+.form-contact input,
+.form-contact textarea,
+.form-contact button {
+    display: block;
+    width: 100%;
+}
+
+.form-contact label {
+    color: darkorange;
+    font-weight: bolder;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    font: inherit;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form-contact textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form-contact input:hover,
+.form-contact input:focus,
+.form-contact textarea:hover,
+.form-contact textarea:focus {
+    outline: none;
+    border-color: orangered;
+    box-shadow: 0 0 0 3px orangered;
+}
+
+.form-contact button {
+    display: block;
+    padding: 16px;
+    background-color: orangered;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-contact button:hover,
+.form-contact button:focus {
+    outline: 1px;
+    background-color: rgb(255, 166, 0);
+}

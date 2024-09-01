@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de contato</title>
+</head>
+<body>
+    <h1>Formulário para Contato</h1>
+    <form class="form-contact" action="https://formsubmit.co/pauloric996@gmail.com" method="POST">  <!-- Email que receberá os envios dos formulários -->
+        
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" name="nascimento" id="nascimento" required>
+
+        <label for="mensagem">Descreva o problema:</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html"> <!-- Aqui pode entrar o email da empresa ou domínio desejado --> 
+
+        <button type="submit">Enviar</button>
+   </form>
+    
+</body>
+</html>
